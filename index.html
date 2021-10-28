@@ -16,15 +16,16 @@
         </div>
       </div>
     </div>
-    <main class="ent-main">
+    <div class="todo-box">
       <form id="todo-form">
-        <input
-          type="text"
-          placeholder="Write a To Do and Press Enter"
-          required
-        />
+        <input class="expired" type="text" placeholder="유통기한" required />
+        <input class="items" type="text" placeholder="품목" required />
+        <input class="save" type="submit" value="save!" />
       </form>
       <ul id="todo-list"></ul>
+      <div class="result-exp"></div>
+    </div>
+    <main class="ent-main">
       <div class="dish">
         <div class="circle">
           <h2 id="clock">00:00:00</h2>

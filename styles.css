@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
 @import "reset.css";
+/* css */
 @import "css/login.css";
 @import "css/geo.css";
 @import "css/condition.css";
+@import "css/todo.css";
 
 body {
   font-family: "Gloria Hallelujah", cursive;
