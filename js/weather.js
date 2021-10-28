@@ -24,22 +24,23 @@ function paintIcon(sky) {
   if (sky === "Clear") {
     weatherIcon.setAttribute("class", "far fa-sun");
   } else if (
-    sky === "scattered clouds" ||
-    sky === "few clouds" ||
-    sky === "broken clouds" ||
-    sky === "overcast clouds"
+    sky === "Scattered clouds" ||
+    sky === "Few clouds" ||
+    sky === "Broken clouds" ||
+    sky === "Overcast clouds" ||
+    sky === "Clouds"
   ) {
     weatherIcon.setAttribute("class", "fas fa-cloud");
   } else if (
-    sky === "shower rain" ||
-    sky === "light rain" ||
-    sky === "moderate rain" ||
+    sky === "Shower rain" ||
+    sky === "Light rain" ||
+    sky === "Moderate rain" ||
     sky === "Rain"
   ) {
-    weatherIcon.setAttribute("class", "fa-cloud-showers-heavy");
+    weatherIcon.setAttribute("class", "fas fa-umbrella");
   } else if (sky === "Thunderstorm") {
     weatherIcon.setAttribute("class", "fas fa-poo-storm");
-  } else if (sky === "snow") {
+  } else if (sky === "Snow") {
     weatherIcon.setAttribute("class", "fas fa-snowflake");
   } else {
     weatherIcon.setAttribute("class", "fas fa-smog");

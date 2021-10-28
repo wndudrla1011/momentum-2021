@@ -1,0 +1,43 @@
+.condition {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  text-align: center;
+  width: 300px;
+  height: 330px;
+  border-radius: 50%;
+  border: 3px solid rgb(173, 173, 173);
+  box-shadow: 1px 1px 3px 3px rgb(173, 173, 173);
+}
+
+.condition-sub {
+  background-color: #e2e4e4;
+  opacity: 0.3;
+  position: absolute;
+  top: 60px;
+  right: 50px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1.5px solid;
+  box-shadow: 5px 5px 10px 30px #e2e4e4;
+}
+
+#clock {
+}
+
+#weather {
+  position: relative;
+  top: 30px;
+}
+
+#weather i {
+  font-size: 40px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#weather span {
+  font-size: 30px;
+}

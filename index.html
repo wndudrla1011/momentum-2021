@@ -7,25 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum App</title>
   </head>
-  <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-      <input required maxlength="15" type="text" placeholder="What is your name?" />
-      <input type="submit" value="Log In"></input>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
-    <div id="quote">
-      <span></span>
-      <span></span>
+  <body class="ent-screen">
+    <div class="condition">
+      <div class="condition-sub">
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </div>
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+    <main class="ent-main">
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
+      <ul id="todo-list"></ul>
+      <div class="dish">
+        <div class="circle">
+          <h2 id="clock">00:00:00</h2>
+        </div>
+      </div>
+      <div class="login-box">
+        <form class="hidden" id="login-form">
+          <input
+            required
+            maxlength="15"
+            type="text"
+            placeholder="What is your name?"
+          />
+          <div class="clone"></div>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </main>
     <script src="js/clock.js"></script>
     <script src="js/login.js"></script>
     <script src="js/tip.js"></script>

@@ -1,23 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap");
+@import "reset.css";
 @import "css/login.css";
 @import "css/geo.css";
+@import "css/condition.css";
 
 body {
   font-family: "Gloria Hallelujah", cursive;
 }
 
 .ent-screen {
+  background-image: url("https://post-phinf.pstatic.net/MjAxODEyMjBfMTYy/MDAxNTQ1Mjg2MTY2MTg4.EMsVh-XLO8k1jOkWNcZrrjXfhTlKX3Zig2yUYpwQozMg.AKIGpGLH9oHUoInx36ZAesEA6sXuzLt-aS6sDJ2Nfncg.JPEG/96f46544fe3de03b2eafe36ce1c35c7f.jpg?type=w1200");
+}
+
+.ent-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .hidden {
   display: none;
 }
 
-#weather i {
-  font-size: 40px;
-  margin: 0px 10px;
+#kitchenImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#weather span {
-  font-size: 30px;
+#kitchenImage img {
+  width: 1200px;
+  height: 500px;
 }
