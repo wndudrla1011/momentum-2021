@@ -1,6 +1,11 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const greeting = document.querySelector("#greeting");
+const hello = document.querySelector("#hello");
+const userName = document.querySelector("#username");
+const greetings = document.querySelector("#greetings");
+const moveButton = document.querySelector("#move-button");
+const yolk = document.querySelector("#move-botton__sub");
+const h2 = document.querySelector("#todo-list__form h2");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -14,8 +19,22 @@ function onLoginSubmit(event) {
 }
 
 function paintGreetings(username) {
-  greeting.innerText = `Hello ${username}`;
-  greeting.classList.remove(HIDDEN_CLASSNAME);
+  const span = document.createElement("span");
+  const hello = document.createElement("span");
+  const userName = document.createElement("span");
+  yolk.appendChild(span);
+  greetings.appendChild(hello);
+  greetings.appendChild(userName);
+  // hello.innerText = "Hello";
+  // userName.innerText = username;
+  hello.innerText = "Hello";
+  userName.innerText = username;
+  span.innerText = "Manage Yours ▶ Main";
+  h2.innerText = `${username}'s To Do List!`;
+  hello.classList.remove(HIDDEN_CLASSNAME);
+  userName.classList.remove(HIDDEN_CLASSNAME);
+  moveButton.classList.remove(HIDDEN_CLASSNAME);
+  yolk.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);

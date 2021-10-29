@@ -2,9 +2,10 @@
 @import "reset.css";
 /* css */
 @import "css/login.css";
-@import "css/geo.css";
 @import "css/condition.css";
+@import "css/exp.css";
 @import "css/todo.css";
+@import "css/quotes.css";
 
 body {
   font-family: "Gloria Hallelujah", cursive;

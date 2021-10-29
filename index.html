@@ -16,15 +16,12 @@
         </div>
       </div>
     </div>
-    <div class="todo-box">
-      <form id="todo-form">
-        <input class="expired" type="text" placeholder="유통기한" required />
-        <input class="items" type="text" placeholder="품목" required />
-        <input class="save" type="submit" value="save!" />
+    <div class="todo-list__box">
+      <form id="todo-list__form">
+        <h2></h2>
+        <input class="todo" type="text" placeholder="To do List" required />
       </form>
-      <ul id="todo-list"></ul>
-      <div class="result-exp"></div>
-      <div class="expired-text"></div>
+      <ul id="todo-list__form-ul"></ul>
     </div>
     <main class="ent-main">
       <div class="dish">
@@ -42,7 +39,9 @@
           />
           <div class="clone"></div>
         </form>
-        <h1 id="greeting" class="hidden"></h1>
+        <div id="greetings"></div>
+        <div id="move-button" class="hidden"></div>
+        <a href="main.html"><div id="move-botton__sub" class="hidden"></div></a>
       </div>
       <div id="quote">
         <span></span>
@@ -51,7 +50,7 @@
     </main>
     <script src="js/clock.js"></script>
     <script src="js/login.js"></script>
-    <script src="js/tip.js"></script>
+    <script src="js/quotes.js"></script>
     <script src="js/kitchenImage.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>

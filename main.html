@@ -8,13 +8,31 @@
     <title>Momentum in the Kitchen</title>
   </head>
   <body class="main-screen">
+    <div class="condition">
+      <div class="condition-sub">
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
     <div id="kitchenImage"></div>
+    <div class="todo-box">
+      <form id="todo-form">
+        <input class="expired" type="text" placeholder="유통기한" required />
+        <input class="items" type="text" placeholder="품목" required />
+        <input class="save" type="submit" value="save!" />
+      </form>
+      <ul id="todo-list"></ul>
+      <div class="result-exp"></div>
+      <div class="expired-text"></div>
+    </div>
     <script src="js/clock.js"></script>
     <script src="js/login.js"></script>
     <script src="js/tip.js"></script>
     <script src="js/kitchenImage.js"></script>
-    <script src="js/todo.js"></script>
-    <script src="js/weather.js"></script>
+    <script src="js/exp.js"></script>
+    <!-- <script src="js/weather.js"></script> -->
     <script
       src="https://kit.fontawesome.com/f320190c34.js"
       crossorigin="anonymous"
