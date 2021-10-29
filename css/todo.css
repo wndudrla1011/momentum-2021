@@ -48,3 +48,8 @@
 .result-exp span {
   margin-top: 10px;
 }
+
+.expired-text {
+  display: flex;
+  flex-direction: column;
+}
