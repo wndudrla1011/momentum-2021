@@ -1,7 +1,5 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
-const hello = document.querySelector("#hello");
-const userName = document.querySelector("#username");
 const greetings = document.querySelector("#greetings");
 const moveButton = document.querySelector("#move-button");
 const yolk = document.querySelector("#move-botton__sub");

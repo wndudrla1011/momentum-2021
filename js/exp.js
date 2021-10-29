@@ -4,13 +4,16 @@ const toDoItems = toDoFormExp.querySelector(".items");
 const toDoSave = toDoFormExp.querySelector(".save");
 const toDoList = document.getElementById("todo-list");
 const resultExp = document.querySelector(".result-exp");
+const resultExpEmpty = document.querySelector(".result-exp__empty");
 const expiredText = document.querySelector(".expired-text");
 const today = new Date();
 const todayYear = today.getFullYear();
 const todayMonth = today.getMonth() + 1;
 const todayDate = today.getDate();
+const colors = ["red", "yellow", "green", "white", "blue"];
 let count = 0;
 
+const HIDDEN_CLASSNAME = "hidden";
 const TODOS_KEY = "toDos";
 
 let toDos = [];
@@ -24,26 +27,27 @@ function deleteToDo(event) {
   li.remove();
   toDos = toDos.filter((toDo) => toDo.id != parseInt(li.id));
   resultExp.classList.add(HIDDEN_CLASSNAME);
+  if (resultExp.childElementCount == 0) {
+    resultExpEmpty.classList.remove(HIDDEN_CLASSNAME);
+  }
   saveToDos();
 }
 
 function paintToDo(newTodo) {
+  let color = colors[Math.floor(Math.random() * colors.length)];
   const li = document.createElement("li");
   li.id = newTodo.id;
   const span = document.createElement("span");
   span.innerText = newTodo.text;
-  span.style.background = "#f5b700";
   const item = document.createElement("span");
   item.innerText = newTodo.item;
-  item.style.background = "green";
   const button = document.createElement("button");
   button.innerText = "X";
-  button.style.color = "white";
-  button.style.background = "red";
+  button.style.background = color;
   button.addEventListener("click", deleteToDo);
+  li.appendChild(button);
   li.appendChild(span);
   li.appendChild(item);
-  li.appendChild(button);
   toDoList.appendChild(li);
 }
 
@@ -80,13 +84,13 @@ function handleToDoSubmit(event) {
 }
 
 toDoFormExp.addEventListener("submit", handleToDoSubmit);
-window.addEventListener(
-  "load",
-  () => {
-    alert(`${count}개 품목이 만료되었어요!`);
-  },
-  { once: true }
-);
+// window.addEventListener(
+//   "load",
+//   () => {
+//     alert(`${count}개 품목이 만료되었어요!`);
+//   },
+//   { once: true }
+// );
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
 
@@ -161,7 +165,7 @@ function changeColorExp(d_day, newTodo) {
     span.style.color = "green";
   } else if (d_day > 10 && d_day <= 20) {
     span.innerText = `${newTodo.item} 품목은 ${d_day}일 남았어요!`;
-    span.style.color = "yellow";
+    span.style.color = "blue";
   } else if (d_day > 5 && d_day <= 10) {
     span.innerText = `${newTodo.item} 품목은 ${d_day}일 남았어요!`;
     span.style.color = "orange";
@@ -169,6 +173,5 @@ function changeColorExp(d_day, newTodo) {
     span.innerText = `${newTodo.item} 품목은 ${d_day}일 남았어요!`;
     span.style.color = "red";
   }
-
   resultExp.appendChild(span);
 }

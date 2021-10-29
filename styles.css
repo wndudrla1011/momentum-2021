@@ -3,9 +3,10 @@
 /* css */
 @import "css/login.css";
 @import "css/condition.css";
-@import "css/exp.css";
+@import "css/top-screen.css";
 @import "css/todo.css";
 @import "css/quotes.css";
+@import "css/bottom-screen.css";
 
 body {
   font-family: "Gloria Hallelujah", cursive;
@@ -13,6 +14,12 @@ body {
 
 .ent-screen {
   background-image: url("https://post-phinf.pstatic.net/MjAxODEyMjBfMTYy/MDAxNTQ1Mjg2MTY2MTg4.EMsVh-XLO8k1jOkWNcZrrjXfhTlKX3Zig2yUYpwQozMg.AKIGpGLH9oHUoInx36ZAesEA6sXuzLt-aS6sDJ2Nfncg.JPEG/96f46544fe3de03b2eafe36ce1c35c7f.jpg?type=w1200");
+}
+
+.main-screen {
+  margin: 10px 70px 20px 70px;
+  height: 100vh;
+  padding: 0px 30px;
 }
 
 .ent-main {

@@ -1,0 +1,77 @@
+.bottom-screen {
+  height: 40%;
+  display: flex;
+}
+
+#foodImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 70%;
+}
+
+#foodImage img {
+}
+
+.smart-watch {
+  width: 300px;
+  height: 250px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.smart-watch i {
+  display: flex;
+  justify-content: center;
+}
+
+.condition-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  border: 3px solid rgb(173, 173, 173);
+  box-shadow: 1px 1px 3px 3px rgb(173, 173, 173);
+  background-color: rgb(173, 173, 173);
+}
+
+.condition-sub-main {
+  background-color: black;
+  width: 275px;
+  height: 85px;
+  border-radius: 20px;
+}
+
+.condition-main h2 {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#weather-main {
+  margin-top: 10px;
+  box-shadow: 1px 1px 3px 3px rgb(173, 173, 173);
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 90%;
+}
+
+#weather-main i {
+  font-size: 40px;
+  display: flex;
+}
+
+#weather-main span {
+  font-size: 30px;
+}

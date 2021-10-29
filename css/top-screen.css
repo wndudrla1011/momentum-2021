@@ -1,0 +1,136 @@
+.top-screen {
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #e6cfe8;
+  height: 300px;
+  width: 50%;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.result-exp {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #d2f7d3;
+  margin-left: 30px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.result-exp__empty {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: #d2f7d3;
+  margin-right: 30px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.result-exp span {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.expired-text {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 300px;
+  background-color: #f6c3de;
+  margin-bottom: 100px;
+  align-items: center;
+}
+
+.expired-text span {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+#todo-form {
+  margin-top: 10px;
+}
+
+#todo-form input:first-child,
+#todo-form input:nth-child(2) {
+  width: 200px;
+  height: 50px;
+  background-color: transparent;
+  margin-right: 10px;
+  text-align: center;
+}
+
+#todo-form input:last-child {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  margin-left: 20px;
+}
+
+#todo-form input:focus {
+  outline: none;
+}
+
+#todo-form input::placeholder {
+  text-align: center;
+}
+
+#todo-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#todo-list button {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+#todo-list li {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#todo-list span {
+  margin: 0px 20px;
+}
+
+#ball-red,
+#ball-yellow,
+#ball-green {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#ball-red {
+  background-color: red;
+  top: 10px;
+  left: 280px;
+}
+
+#ball-yellow {
+  background-color: yellow;
+  top: 20px;
+  left: 730px;
+}
+
+#ball-green {
+  background-color: green;
+  top: 10px;
+  left: 400px;
+}

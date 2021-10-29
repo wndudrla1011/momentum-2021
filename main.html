@@ -8,31 +8,44 @@
     <title>Momentum in the Kitchen</title>
   </head>
   <body class="main-screen">
-    <div class="condition">
-      <div class="condition-sub">
-        <div id="weather">
+    <div class="top-screen">
+      <div class="todo-box">
+        <div id="ball-red"></div>
+        <form id="todo-form">
+          <input class="expired" type="text" placeholder="유통기한" required />
+          <input class="items" type="text" placeholder="품목" required />
+          <input class="save" type="submit" value="save!" />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div class="expired-text">
+        <div id="ball-yellow"></div>
+      </div>
+      <div class="result-exp">
+        <div id="ball-green"></div>
+      </div>
+      <div class="result-exp__empty hidden">
+        <div id="ball-green"></div>
+      </div>
+    </div>
+    <div class="bottom-screen">
+      <div id="foodImage"></div>
+      <div class="smart-watch">
+        <div class="condition-main">
+          <div class="condition-sub-main">
+            <h2 id="clock">00:00:00</h2>
+          </div>
+        </div>
+        <div id="weather-main">
           <span></span>
           <span></span>
         </div>
       </div>
     </div>
-    <div id="kitchenImage"></div>
-    <div class="todo-box">
-      <form id="todo-form">
-        <input class="expired" type="text" placeholder="유통기한" required />
-        <input class="items" type="text" placeholder="품목" required />
-        <input class="save" type="submit" value="save!" />
-      </form>
-      <ul id="todo-list"></ul>
-      <div class="result-exp"></div>
-      <div class="expired-text"></div>
-    </div>
     <script src="js/clock.js"></script>
-    <script src="js/login.js"></script>
-    <script src="js/tip.js"></script>
-    <script src="js/kitchenImage.js"></script>
+    <script src="js/foodImage.js"></script>
     <script src="js/exp.js"></script>
-    <!-- <script src="js/weather.js"></script> -->
+    <script src="js/weather-main.js"></script>
     <script
       src="https://kit.fontawesome.com/f320190c34.js"
       crossorigin="anonymous"
