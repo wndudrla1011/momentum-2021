@@ -8,9 +8,11 @@
     <title>Momentum in the Kitchen</title>
   </head>
   <body class="main-screen">
+    <!-- <div id="ball-red"></div>
+    <div id="ball-yellow"></div>
+    <div id="ball-green"></div> -->
     <div class="top-screen">
       <div class="todo-box">
-        <div id="ball-red"></div>
         <form id="todo-form">
           <input class="expired" type="text" placeholder="유통기한" required />
           <input class="items" type="text" placeholder="품목" required />
@@ -18,18 +20,20 @@
         </form>
         <ul id="todo-list"></ul>
       </div>
-      <div class="expired-text">
-        <div id="ball-yellow"></div>
-      </div>
-      <div class="result-exp">
-        <div id="ball-green"></div>
-      </div>
-      <div class="result-exp__empty hidden">
-        <div id="ball-green"></div>
+      <div class="todo-result">
+        <div class="expired-text"></div>
+        <div class="result-exp"></div>
+        <div class="result-exp__empty hidden"></div>
       </div>
     </div>
     <div class="bottom-screen">
-      <div id="foodImage"></div>
+      <div id="image-border">
+        <div id="foodImage">
+          <button id="button-changeImage">
+            <div></div>
+          </button>
+        </div>
+      </div>
       <div class="smart-watch">
         <div class="condition-main">
           <div class="condition-sub-main">
