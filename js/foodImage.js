@@ -1,13 +1,4 @@
-const images = [
-  "0.jpg",
-  "1.jpg",
-  "2.jpg",
-  "3.jpg",
-  "4.jpg",
-  "5.jpg",
-  "6.jpg",
-  "7.jpg",
-];
+const images = ["0.jpg", "1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"];
 const title = [
   "육회비빔밥",
   "돈카츠 정식",
@@ -15,7 +6,6 @@ const title = [
   "밀푀유 나베",
   "치킨 가라아케",
   "냉모밀",
-  "닭갈비",
   "모듬회",
 ];
 const foodImage = document.querySelector("#foodImage");
