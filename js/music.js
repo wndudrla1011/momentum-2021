@@ -6,4 +6,4 @@ function playMusic() {
 }
 
 window.addEventListener("load", playMusic);
-window.addEventListener("beforeunload", playMusic);
+// window.addEventListener("beforeunload", playMusic);

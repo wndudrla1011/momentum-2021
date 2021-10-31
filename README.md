@@ -10,3 +10,5 @@ Main function
 ✔ Show my pictures
 ✔ Show quotes
 ✔ Geolocation
+✔ Calculate Expiration Dates
+✔ Background Music
