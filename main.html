@@ -8,9 +8,9 @@
     <title>Momentum in the Kitchen</title>
   </head>
   <body class="main-body">
-    <div class="tooltip-screen">
+    <div class="tooltip-save__box">
       💭
-      <span class="tooltiptext-screen tooltip-left">
+      <span class="tooltiptext-save__box tooltip-left">
         <p>
           Let's add your item! <br />
           Try refreshing it <br />
@@ -46,7 +46,7 @@
         <div class="result-exp">
           <div class="tooltip">
             💭
-            <span class="tooltiptext tooltip-right">
+            <span class="tooltiptext tooltip-result-exp">
               <p>
                 Exp date 21 ~ 30 days : green color <br />
                 Exp date 11 ~ 20 days : blue color <br />
@@ -71,12 +71,18 @@
         </div>
       </div>
       <div class="bottom-screen">
-        <div id="image-border">
-          <div id="foodImage">
-            <button id="button-changeImage">
-              <div></div>
-            </button>
-          </div>
+        <div id="foodImage">
+          <button id="clicked-button" class="opacity">
+            <div class="tooltip-image">
+              C
+              <span class="tooltip-image__text tooltip-image__left">
+                <p>Change Image</p>
+              </span>
+            </div>
+          </button>
+          <button id="button-changeImage">
+            <div>Change Image</div>
+          </button>
         </div>
         <div class="smart-watch">
           <div class="condition-main">
@@ -100,16 +106,5 @@
       src="https://kit.fontawesome.com/f320190c34.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
-    <script>
-      tippy(".resultExp", {
-        content: "A",
-        placement: "right",
-        trigger: "click",
-        hideOnClick: "toggle",
-        animation: "shift-away",
-      });
-    </script>
   </body>
 </html>

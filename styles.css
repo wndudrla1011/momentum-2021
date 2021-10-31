@@ -22,7 +22,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://d39l2hkdp2esp1.cloudfront.net/img/photo/118682/118682_00_2x.jpg");
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_our/20190621/ourmid/pngtree-yellow-vegetable-and-fruit-background-main-picture-image_182664.jpg");
 }
 
 .main-screen {
@@ -47,6 +47,10 @@ body {
 
 .hidden {
   display: none;
+}
+
+.opacity {
+  opacity: 0;
 }
 
 #kitchenImage {
