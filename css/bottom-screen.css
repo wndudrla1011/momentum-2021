@@ -97,13 +97,7 @@
   width: 300px;
   height: 100px;
   border-radius: 20px;
-  background-color: rgb(173, 173, 173);
-}
-
-.condition-sub-main {
-  width: 275px;
-  height: 85px;
-  border-radius: 20px;
+  background: linear-gradient(0.25turn, #b8b9b9, #999b99, #727272);
 }
 
 .condition-main h2 {
@@ -120,15 +114,22 @@
   border-radius: 20px;
   padding: 5px 10px;
   width: 90%;
+  position: relative;
 }
 
 #weather-main i {
   font-size: 40px;
-  display: flex;
+  margin-top: 10px;
 }
 
 #weather-main span {
   font-size: 30px;
+}
+
+#city {
+  position: absolute;
+  bottom: 230px;
+  left: 10px;
 }
 
 .music-player {
@@ -177,6 +178,55 @@
 }
 
 .tooltip-image .tooltip-image__left::after {
+  top: 100%;
+  left: 100%;
+  margin-top: -5px;
+  border-color: transparent transparent transparent black;
+  transform: rotateZ(35deg);
+}
+
+.tooltip-smart-watch {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+  margin-right: 8px;
+  font-size: 20px;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.tooltip-smart-watch .tooltiptext-smart-watch {
+  visibility: hidden;
+  width: 210px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  line-height: 30px;
+}
+
+.tooltip-smart-watch:hover .tooltiptext-smart-watch {
+  visibility: visible;
+}
+
+.tooltip-smart-watch .tooltiptext-smart-watch::after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.tooltip-smart-watch .tooltip-left__smart-watch {
+  top: -40px;
+  right: 10%;
+}
+
+.tooltip-smart-watch .tooltip-left__smart-watch::after {
   top: 100%;
   left: 100%;
   margin-top: -5px;
