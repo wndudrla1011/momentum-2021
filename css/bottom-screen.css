@@ -1,6 +1,8 @@
 .bottom-screen {
   height: 50%;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #image-border {

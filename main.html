@@ -7,52 +7,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Momentum in the Kitchen</title>
   </head>
-  <body class="main-screen">
-    <!-- <div id="ball-red"></div>
-    <div id="ball-yellow"></div>
-    <div id="ball-green"></div> -->
-    <div class="top-screen">
-      <div class="todo-box">
-        <form id="todo-form">
-          <input class="expired" type="text" placeholder="유통기한" required />
-          <input class="items" type="text" placeholder="품목" required />
-          <input class="save" type="submit" value="save!" />
-        </form>
-        <ul id="todo-list"></ul>
-      </div>
-      <div class="todo-result">
-        <div class="expired-text"></div>
-        <div class="result-exp"></div>
-        <div class="result-exp__empty hidden"></div>
-      </div>
+  <body class="main-body">
+    <div class="tooltip-screen">
+      💭
+      <span class="tooltiptext-screen tooltip-left">
+        <p>
+          Let's add your item! <br />
+          Try refreshing it <br />
+          You can see it on the right!
+        </p>
+      </span>
     </div>
-    <div class="bottom-screen">
-      <div id="image-border">
-        <div id="foodImage">
-          <button id="button-changeImage">
-            <div></div>
-          </button>
+    <div class="main-screen">
+      <div class="top-screen">
+        <div class="todo-box">
+          <form id="todo-form">
+            <div class="todo-form__top">
+              <input
+                class="expired"
+                type="text"
+                placeholder="EXPIRATION DATE"
+                required
+              />
+              <input class="items" type="text" placeholder="ITEM" required />
+            </div>
+            <input class="save" type="submit" value="SAVE !" />
+          </form>
+          <ul id="todo-list"></ul>
         </div>
-      </div>
-      <div class="smart-watch">
-        <div class="condition-main">
-          <div class="condition-sub-main">
-            <h2 id="clock">00:00:00</h2>
+        <div class="expired-text">
+          <div class="tooltip">
+            💭
+            <span class="tooltiptext tooltip-top">
+              <span>It's past the expiration date!</span>
+            </span>
           </div>
         </div>
-        <div id="weather-main">
-          <span></span>
-          <span></span>
+        <div class="result-exp">
+          <div class="tooltip">
+            💭
+            <span class="tooltiptext tooltip-right">
+              <p>
+                Exp date 21 ~ 30 days : green color <br />
+                Exp date 11 ~ 20 days : blue color <br />
+                Exp date 6 ~ 10 days : orange color <br />
+                Exp date Less than 5 days : red color <br />
+              </p>
+            </span>
+          </div>
         </div>
+        <div class="result-exp__empty hidden">
+          <div class="tooltip">
+            💭
+            <span class="tooltiptext tooltip-right">
+              <p>
+                유통기한(exp.date) 21 ~ 30일 : green color <br />
+                유통기한(exp.date) 11 ~ 20일 : blue color <br />
+                유통기한(exp.date) 6 ~ 10일 : orange color <br />
+                유통기한(exp.date) 5일 이하 : red color <br />
+              </p>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-screen">
+        <div id="image-border">
+          <div id="foodImage">
+            <button id="button-changeImage">
+              <div></div>
+            </button>
+          </div>
+        </div>
+        <div class="smart-watch">
+          <div class="condition-main">
+            <div class="condition-sub-main">
+              <h2 id="clock">00:00:00</h2>
+            </div>
+          </div>
+          <div id="weather-main">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="music-player"></div>
       </div>
     </div>
     <script src="js/clock.js"></script>
     <script src="js/foodImage.js"></script>
     <script src="js/exp.js"></script>
-    <script src="js/weather-main.js"></script>
+    <!-- <script src="js/weather-main.js"></script> -->
     <script
       src="https://kit.fontawesome.com/f320190c34.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script>
+      tippy(".resultExp", {
+        content: "A",
+        placement: "right",
+        trigger: "click",
+        hideOnClick: "toggle",
+        animation: "shift-away",
+      });
+    </script>
   </body>
 </html>
