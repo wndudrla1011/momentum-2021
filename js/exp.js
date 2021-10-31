@@ -137,7 +137,7 @@ function checkExp(newTodo) {
       expiredText.appendChild(span);
       span.innerText = `${item}의 유통기한이 지났어요!`;
     } else if (todayMonth < month) {
-      if (monthNumber - parseInt(todayMonth) == 1) {
+      if (monthNumber - todayMonth == 1) {
         //유통기한 1달 이내
         let d_day;
         if (date <= todayDate) {
@@ -145,8 +145,7 @@ function checkExp(newTodo) {
           d_day = date - todayDate;
           changeColorExp(d_day, newTodo);
         } else {
-          d_day = dateNumber - todayDate;
-          changeColorExp(d_day, newTodo);
+          //유통기한 1달 이상
         }
       }
     }
