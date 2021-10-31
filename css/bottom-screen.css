@@ -138,6 +138,28 @@
   height: 300px;
   width: 33%;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-player .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  font-size: 35px;
+}
+
+.music-player audio {
+  margin-bottom: 30px;
+}
+
+audio::-webkit-media-controls-panel {
+  background: linear-gradient(0.25turn, #b8b9b9, #999b99, #727272);
+  color: black;
+  font-weight: 600;
 }
 
 .tooltip-image {
@@ -232,4 +254,52 @@
   margin-top: -5px;
   border-color: transparent transparent transparent black;
   transform: rotateZ(35deg);
+}
+
+.tooltip-music {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  margin-right: 8px;
+  font-size: 18px;
+  width: 100%;
+  cursor: pointer;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.tooltip-music .tooltiptext-music {
+  visibility: hidden;
+  width: 210px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  line-height: 30px;
+}
+
+.tooltip-music:hover .tooltiptext-music {
+  visibility: visible;
+}
+
+.tooltip-music .tooltiptext-music::after {
+  content: " ";
+  position: absolute;
+  border-style: solid;
+  border-width: 5px;
+}
+
+.tooltip-music .tooltip-right__music {
+  top: -35px;
+  left: 102%;
+}
+
+.tooltip-music .tooltip-right__music::after {
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-color: transparent black transparent transparent;
 }

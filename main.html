@@ -101,13 +101,32 @@
             <span id="city"></span>
           </div>
         </div>
-        <div class="music-player"></div>
+        <div class="music-player">
+          <div class="tooltip-music">
+            💭
+            <span class="tooltiptext-music tooltip-right__music">
+              <p>
+                Background Music <br />
+                Basic Volume : 50% <br />
+                Option : loop
+              </p>
+            </span>
+          </div>
+          <span class="title">Music Player</span>
+          <audio
+            class="background-music"
+            autoplay
+            controls
+            src="music/bensound-ukulele.mp3"
+          ></audio>
+        </div>
       </div>
     </div>
     <script src="js/clock.js"></script>
     <script src="js/foodImage.js"></script>
     <script src="js/exp.js"></script>
     <script src="js/weather-main.js"></script>
+    <script src="js/music.js"></script>
     <script
       src="https://kit.fontawesome.com/f320190c34.js"
       crossorigin="anonymous"
