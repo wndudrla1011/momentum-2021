@@ -7,7 +7,7 @@ Main function
 ✔ To do list
 ✔ Clock
 ✔ Mark your name
-✔ Show my pictures
+✔ Show the special menu for today
 ✔ Show quotes
 ✔ Geolocation
 ✔ Calculate Expiration Dates
