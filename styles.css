@@ -52,14 +52,3 @@ body {
 .opacity {
   opacity: 0;
 }
-
-#kitchenImage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#kitchenImage img {
-  width: 1200px;
-  height: 500px;
-}
