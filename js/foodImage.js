@@ -55,5 +55,5 @@ function changeImageCircle() {
   span.innerText = title[random];
 }
 
-window.addEventListener("load", changeImageBox);
+buttonChangeImage.addEventListener("click", changeImageBox);
 clickedButton.addEventListener("click", changeImageCircle);
