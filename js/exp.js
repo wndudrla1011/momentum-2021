@@ -112,6 +112,17 @@ function checkExp(newTodo) {
   let dateNumber = parseInt(date);
 
   if (todayYear < yearNumber) {
+    if (monthNumber + 12 - todayMonth == 1) {
+      //유통기한 1달 이내 -> 올해 12월 - 다음해 1월
+      if (date <= todayDate) {
+        let d_day;
+        date = dateNumber + 30;
+        d_day = date - todayDate;
+        changeColorExp(d_day, newTodo);
+      } else {
+        //유통기한 1달 이상
+      }
+    }
   } else if (todayYear == yearNumber) {
     if (todayMonth == month) {
       //이번 달
